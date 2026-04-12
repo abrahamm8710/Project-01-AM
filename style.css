@@ -87,6 +87,37 @@ h1, h2 {
   transition: opacity 0.5s ease;
 }
 
+.runner {
+  width: 96px;
+  height: 96px;
+  background-image: url("9 image sprite Shadow the Hedgehog - Shadow (Sonic 3-Style).PNG");
+  background-repeat: no-repeat;
+  background-size: auto;
+  animation:
+    run 0.6s steps(9) infinite,
+    move 2s linear forwards;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+@keyframes run {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -864px;
+  }
+}
+
+@keyframes move {
+  from {
+    left: -100px;
+  }
+  to {
+    left: calc(100vw - 100px);
+  }
+}
+
 .loading-bar {
   width: 300px;
   height: 10px;
