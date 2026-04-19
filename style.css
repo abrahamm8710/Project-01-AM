@@ -122,9 +122,10 @@ main {
 
 .experience-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 300px;
+  gap: 20px;
+  width: 450px;
   padding: 20px;
   background: rgba(0, 255, 255, 0.15);
   border: 4px solid #FF6600;
@@ -139,15 +140,15 @@ main {
 }
 
 .experience-card img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
 .card-content {
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -226,10 +227,16 @@ main {
   .experience-card {
     width: 280px;
     padding: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .experience-card img {
     max-width: 200px;
+  }
+
+  .card-content {
+    text-align: center;
   }
 
   .loading-bar {
@@ -289,16 +296,24 @@ main {
     max-width: 280px;
     padding: 12px;
     border: 3px solid #FF6600;
+    flex-direction: column;
+    align-items: center;
   }
 
   .experience-card img {
-    max-width: 150px;
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
   }
 
   .card-content h3 {
     font-size: 1.1em;
     margin: 8px 0;
+  }
+
+  .card-content {
+    text-align: center;
   }
 
   .job-title {
@@ -347,10 +362,13 @@ main {
     width: 90vw;
     max-width: 100%;
     padding: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .experience-card img {
-    max-width: 120px;
+    width: 80px;
+    height: 80px;
   }
 
   main {
