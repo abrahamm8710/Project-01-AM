@@ -223,6 +223,57 @@ main {
   font-size: 1.05rem;
 }
 
+.site-footer {
+  margin-left: 200px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  color: #111;
+}
+
+.footer-contact,
+.footer-links {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-name {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.site-footer p {
+  margin: 0.35rem 0;
+}
+
+.site-footer a {
+  color: var(--accent-color);
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .site-footer,
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.skill-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
 .skill-card p {
   margin: 0;
   color: rgba(17, 17, 17, 0.88);
