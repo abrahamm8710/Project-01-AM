@@ -227,29 +227,19 @@ main {
 }
 
 .site-footer {
+  margin-left: 200px;
   margin-top: auto;
-  padding: 30px 20px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.16);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   color: #111;
-  text-align: center 1px solid rgba(255, 255, 255, 0.4);
-  color: #111;
-}
-
-.footer-contact,
-.footer-links {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-name {
-  font-weight: 700;
-  margin-bottom: 0.4rem;
 }
 
 .site-footer p {
-  margin: 0.35rem 0;
+  margin: 0;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .site-footer a {
