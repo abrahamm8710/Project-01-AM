@@ -22,16 +22,24 @@
         <div class="projects-container">
             <div class="project-card">
                 <div class="project-images-gallery">
-                    <img src="UEFN1.png" alt="UEFN Project Image 1">
-                    <img src="UEFN2.png" alt="UEFN Project Image 2">
-                    <img src="UEFN3.png" alt="UEFN Project Image 3">
-                    <img src="UEFN4.png" alt="UEFN Project Image 4">
-                    <img src="UEFN5.png" alt="UEFN Project Image 5">
+                    <img src="UEFN1.png" alt="UEFN Project Image 1" class="gallery-img">
+                    <img src="UEFN2.png" alt="UEFN Project Image 2" class="gallery-img">
+                    <img src="UEFN3.png" alt="UEFN Project Image 3" class="gallery-img">
+                    <img src="UEFN4.png" alt="UEFN Project Image 4" class="gallery-img">
+                    <img src="UEFN5.png" alt="UEFN Project Image 5" class="gallery-img">
                 </div>
                 <div class="project-content">
                     <h3>Unreal Engine Game Development</h3>
-                    <p>A comprehensive game development project showcasing advanced UEFN (Unreal Engine for Fortnite) skills including creative environment design, custom mechanics, player experience optimization, asset creation, and complex gameplay systems. This project demonstrates expertise in building immersive and engaging game worlds.</p>
+                    <p>A comprehensive game development project showcasing advanced UEFN skills including creative environment design, custom mechanics, player experience optimization, asset creation, and complex gameplay systems.</p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Image Lightbox Modal -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-image" id="modalImage" src="" alt="">
             </div>
         </div>
     </main>
@@ -40,3 +48,35 @@
     </footer>
 </body>
 </html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const galleryImages = document.querySelectorAll('.gallery-img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('show');
+            modalImage.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+    });
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            modal.classList.remove('show');
+        }
+    });
+});
+</script>

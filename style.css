@@ -502,7 +502,8 @@ main {
 .projects-container {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
 .project-card {
@@ -514,7 +515,7 @@ main {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -525,35 +526,38 @@ main {
 }
 
 .project-images-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
   gap: 10px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
 }
 
-.project-images-gallery img {
-  width: 100%;
-  height: 150px;
+.gallery-img {
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
 }
 
-.project-images-gallery img:hover {
-  transform: scale(1.05);
+.gallery-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
 }
 
 .project-content {
-  padding: 25px;
+  padding: 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .project-content h3 {
-  margin: 0 0 15px 0;
-  font-size: 1.4em;
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
   color: #000;
   text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
 }
@@ -561,30 +565,94 @@ main {
 .project-content p {
   margin: 0;
   color: rgba(17, 17, 17, 0.88);
-  line-height: 1.6;
-  font-size: 0.95em;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+/* Image Modal / Lightbox */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.close {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #0ff;
 }
 
 @media (max-width: 768px) {
   .project-card {
-    margin: 0 15px;
+    max-width: 100%;
   }
 
   .project-images-gallery {
-    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     padding: 10px;
   }
 
-  .project-images-gallery img {
-    height: 120px;
-  }
-
-  .project-content {
-    padding: 15px;
+  .gallery-img {
+    width: 70px;
+    height: 70px;
   }
 
   .project-content h3 {
     font-size: 1.1em;
+  }
+
+  .project-content p {
+    font-size: 0.85em;
   }
 }
