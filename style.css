@@ -238,11 +238,9 @@ main {
 .site-footer p {
   margin: 0;
   font-size: 0.95rem;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
-.site-footer a {
+    white-space: normal;
+    overflow-x: hidden;
+    word-wrap: break-word;
   color: var(--accent-color);
 }
 
