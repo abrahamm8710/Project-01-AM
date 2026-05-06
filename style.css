@@ -115,12 +115,22 @@ main {
 }
 
 .profile-img {
-  width: 200px;
+  width: 300px;
   height: auto;
   border: 5px solid #000;
   border-radius: 10px;
   display: block;
   margin: 20px auto;
+}
+
+.profile-card {
+  width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* Experience Cards Styling */
