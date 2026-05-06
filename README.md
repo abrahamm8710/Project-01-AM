@@ -21,3 +21,5 @@ I chose to use these tools because it is something I am already familiar with in
 ## How to visit my portfolio site
 Deployed/Live site:https://abrahamm8710.github.io/Project-01-AM/
 Github Repository:https://github.com/abrahamm8710/Project-01-AM
+
+## What changed from Project 01 to Project 02?

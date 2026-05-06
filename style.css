@@ -114,6 +114,15 @@ main {
   padding: 20px;
 }
 
+.profile-img {
+  width: 200px;
+  height: auto;
+  border: 5px solid #000;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
 /* Experience Cards Styling */
 .experience-cards {
   display: flex;
