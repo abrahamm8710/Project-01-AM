@@ -130,9 +130,10 @@ main {
   width: 500px;
   max-width: calc(100% - 40px);
   padding: 30px;
-  background: rgba(0, 255, 255, 0.18);
-  border: 2px solid rgba(0, 255, 255, 0.8);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+  background: rgba(0, 255, 255, 0.95);
+  color: #0a0a0a;
+  border: 2px solid rgba(0, 255, 255, 0.95);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.35);
   border-radius: 14px;
   text-align: center;
 }
