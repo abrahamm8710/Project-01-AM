@@ -108,7 +108,7 @@ h1, h2 {
   to { width: 100%; }
 }
 
-main {
+body.home-page main {
   flex: 1;
   margin-left: 200px;
   padding: 20px;
