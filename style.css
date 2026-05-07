@@ -255,11 +255,10 @@ body.home-page main {
 
 /* Hobbies Grid Styling */
 .hobbies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  justify-items: center;
-  align-items: stretch;
+  justify-content: center;
   margin: 20px auto 40px;
   max-width: 1080px;
 }
