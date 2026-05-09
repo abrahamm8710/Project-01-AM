@@ -23,3 +23,4 @@ Deployed/Live site:https://abrahamm8710.github.io/Project-01-AM/
 Github Repository:https://github.com/abrahamm8710/Project-01-AM
 
 ## What changed from Project 01 to Project 02?
+I had to change the way Javascript would be used in this project. I struggled to find ideas to implement Javascript into my portfolio. Despite using ChatGPT for advice, I couldn't get it to work in my website, the only thing it did help me on is using it for a loading screen for my site. I improved my contact page by a lot. At the beginning or at Project 01 I lacked structure for that page, and I ended up revamping it in  a way that it looks a lot better and stands out more. 
