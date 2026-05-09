@@ -1,7 +1,7 @@
 # Project-01-AM
 
 ## What is this?
-This is my personal portfolio website. It introduces me, who I am, my interests, and much more
+This is my personal portfolio website. It is about myself as a person, my hobbies, interests, experience and etc. It is a interactive portfolio site.
 
 ## Why does it exist?
 It serves as a portfolio and to intorduce myself to others. It will allow users to learn more about me, my skills, and more
@@ -10,9 +10,9 @@ It serves as a portfolio and to intorduce myself to others. It will allow users 
 HTML-to structure and create my portfolio
 CSS- to design my layout and style of the portfolio site
 GitHub-to store and manage my website
-ChatGPT-to help me with topics regarding coding, how to do certain things
+ChatGPT-to help me with topics regarding coding, how to do certain things, what should I include on a certain page
 Visual Studio Code (VSC) for editing and adjusting code
-VSC AI copoilt- to help me write and adjust my coding
+VSC AI copoilt- to help me write and adjust my coding, fix any broken links between pages
 GitHub Pages- to deploy my portfolio site
 Javascript- for interactivity features (I am not sure if I will end up using it)
 
