@@ -481,8 +481,8 @@ body.home-page main {
   margin-left: 220px;
   margin-top: auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.16);
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border-top: none;
   color: #111;
 }
 
